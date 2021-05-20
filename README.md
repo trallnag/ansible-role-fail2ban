@@ -1,6 +1,6 @@
-[![role](https://img.shields.io/ansible/role/54870)](https://galaxy.ansible.com/trallnag/fail2ban)
-[![quality](https://img.shields.io/ansible/quality/54870)](https://galaxy.ansible.com/trallnag/fail2ban)
-[![downloads](https://img.shields.io/ansible/role/d/54870?label=downloads)](https://galaxy.ansible.com/trallnag/fail2ban)
+[![role](https://img.shields.io/ansible/role/54952)](https://galaxy.ansible.com/trallnag/fail2ban)
+[![quality](https://img.shields.io/ansible/quality/54952)](https://galaxy.ansible.com/trallnag/fail2ban)
+[![downloads](https://img.shields.io/ansible/role/d/54952?label=downloads)](https://galaxy.ansible.com/trallnag/fail2ban)
 
 # Endlessh
 
