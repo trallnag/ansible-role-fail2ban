@@ -1,0 +1,24 @@
+galaxy_info:
+  author: Tim Schwenke
+  namespace: trallnag
+  role_name: fail2ban
+  description: Install fail2ban and configure it with arbitrary configuration.
+  license: Apache-2.0
+  company: none
+  min_ansible_version: 2.5
+
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+
+dependencies: []

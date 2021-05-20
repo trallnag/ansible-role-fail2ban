@@ -1,0 +1,30 @@
+- name: Import assert.yml
+  import_tasks: assert.yml
+  run_once: true
+  delegate_to: localhost
+
+- name: Ensure fail2ban package is present
+  package:
+    name: fail2ban
+    state: present
+  become: true
+
+- name: Template and place config files
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    owner: root
+    group: root
+    mode: "0644"
+  become: true
+  loop: "{{ fail2ban_config_files }}"
+  loop_control:
+    label: "{{ item.src }}"
+  when:
+    - fail2ban_config_files is defined
+    - fail2ban_config_files is iterable
+  notify:
+    - "{{ role_name }} : Restart systemd service fail2ban"
+
+- name: Flush handlers
+  meta: flush_handlers
