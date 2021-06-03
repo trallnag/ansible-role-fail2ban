@@ -9,6 +9,10 @@ specification.
 
 ## Unreleased
 
+* Nothing
+
+## [1.0.1] 2021-06-03
+
 ### Added
 
 * Improved docs.
