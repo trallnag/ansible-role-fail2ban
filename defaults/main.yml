@@ -1,11 +1,2 @@
-# Fail2ban has a quit extensive configuration. Therefore you can simply copy
-# arbitrary files to the target host.
-# 
-# Important: The files on the target host will be overwritten if they already exist.
-# In addition you can use Jinja2 syntax in the config files because every file
-# is handled by Ansible template module.
+---
 fail2ban_config_files: []
-# - src: "{{ playbook_dir }}/files/fail2ban/jail.local"
-#   dest: /etc/fail2ban/jail.local
-# - src: "{{ playbook_dir }}/files/fail2ban/action.d/route.conf"
-#   dest: /etc/fail2ban/action.d/route.conf

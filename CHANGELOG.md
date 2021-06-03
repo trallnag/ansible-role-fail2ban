@@ -13,6 +13,12 @@ specification.
 
 * Improved docs.
 
+### Changed
+
+* Switched to argument spec from assert file. Only supported starting with
+  ansible-core 2.11. For more information, see here:
+  <https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#role-argument-validation>.
+
 ## [1.0.0] 2021-05-20
 
 * Intial release.
